@@ -3,6 +3,7 @@ import { dbSeed } from "@/lib/dbSeed";
 
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+
 import Highlights from "../components/Highlights";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -12,6 +13,8 @@ import Research from "../components/Research";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+
+export const dynamic = "force-dynamic";
 
 // Serialization helper to map MongoDB object structures to JSON-safe props
 function serializeDoc(doc) {
