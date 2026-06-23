@@ -48,7 +48,7 @@ export async function POST(request) {
   } catch (error) {
     console.error("Upload API Route Error:", error);
     return NextResponse.json(
-      { error: "Internal server error occurred during file upload." },
+      { error: `Internal server error occurred during file upload: ${error.message}. Stack: ${error.stack}` },
       { status: 500 }
     );
   }
